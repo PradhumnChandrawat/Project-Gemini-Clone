@@ -1,0 +1,137 @@
+:root {
+  font-size: 16px;
+}
+
+.main {
+  flex: 1;
+  min-height: 100vh;
+  padding-bottom: 15vh;
+  position: relative;
+}
+.main .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.375rem;
+  padding: 1.25rem;
+  color: #585858;
+}
+
+.profile {
+  border-radius: 50%;
+}
+.main-container {
+  max-width: 900px;
+  margin: auto;
+}
+.main .greet {
+  margin: 1.875rem 0;
+  font-size: 3.125rem;
+  color: #c4c7c5;
+  padding: 1.25rem;
+}
+.main .greet span {
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1.25rem;
+}
+.main .card {
+  height: 12.5rem;
+  padding: 0.9375rem;
+  background-color: #f0f4f9;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  position: relative;
+}
+.main .icon {
+  padding: 0.3125rem;
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.main .card p {
+  color: #585858;
+  font-size: 1.0625rem;
+}
+.main .card:hover {
+  background-color: #dfe4ea;
+}
+.main-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 1.25rem;
+  margin: auto;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f0f4f9;
+  padding: 0.625rem 1.25rem;
+  border-radius: 50px;
+}
+.search-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.125rem;
+}
+.search-input div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.main .bottom-info {
+  font-size: 0.8125rem;
+  font-weight: 300;
+  margin: 0.9375rem auto;
+  text-align: center;
+}
+.result {
+  padding: 0 5%;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+.result::-webkit-scrollbar {
+  display: none;
+}
+.result-title {
+  margin: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.result img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.result-data {
+  display: flex;
+  align-items: start;
+  gap: 1.25rem;
+}
+.loader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.result-data p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+}

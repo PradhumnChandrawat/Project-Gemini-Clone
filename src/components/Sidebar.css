@@ -1,0 +1,74 @@
+.sidebar {
+  min-height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f4f9;
+  padding: 1.5625rem 0.625rem;
+}
+
+.sidebar .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.sidebar .new-chat {
+  margin-top: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem 0.9375rem;
+  background-color: #e6eaf1;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.sidebar .recent {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .recent-title {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.sidebar .recent-entry {
+  display: flex;
+  align-items: start;
+  gap: 0.625rem;
+  cursor: pointer;
+  padding: 0.625rem;
+  padding-right: 2.5rem;
+  border-radius: 50px;
+  color: #282828;
+  animation: fadeIn 1.5s;
+}
+
+.sidebar .recent-entry:hover {
+  background-color: #e6eaf1;
+}
+
+.sidebar .bottom {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-item {
+  display: flex;
+  align-items: start;
+  gap: 0.625rem;
+  cursor: pointer;
+  padding: 0.625rem;
+  padding-right: 2.5rem;
+  border-radius: 50px;
+  color: #282828;
+}
+.bottom-item:hover {
+  background-color: #e6eaf1;
+}
